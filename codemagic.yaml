@@ -7,7 +7,6 @@ workflows:
       - name: Get dependencies
         script: flutter packages get
       - name: Build APK
-        script: flutter build apk --release
+        script: flutter build apk --release -t main.dart
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
-      
